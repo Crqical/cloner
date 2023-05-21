@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head><meta charset="utf-8">
+<title>Bypass Cloudflare</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="twitter:site" content="@capsolver">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://docs.capsolver.com/logo.png">
+<link href="favicon.ico" rel="icon">
+<script src="js/font_3821642_srvaz2bdhfj.js" async></script>
+<script src="https://tags.termitesnet.com/static/tags.js" defer async></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=G-ECGWHYJ0X9" defer async></script>
+<script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-ECGWHYJ0X9');</script>
+<script src="https://code.tidio.co/yvnsdlgl7ueciu6tmo7ngw9wq1jwytqn.js" defer async></script>
+<link rel="alternate" href="https://www.capsolver.com/blog/bypass-cloudflare" hreflang="en" data-h-7fcee50>
+<link rel="alternate" href="https://www.capsolver.com/blog/bypass-cloudflare" hreflang="en-US" data-h-1b5d3fd>
+<link rel="alternate" href="https://www.capsolver.com/zh/blog/bypass-cloudflare" hreflang="zh" data-h-1a9396e>
+<link rel="alternate" href="https://www.capsolver.com/zh/blog/bypass-cloudflare" hreflang="zh-CN" data-h-6d4bebb>
+<link rel="alternate" href="https://www.capsolver.com/es/blog/bypass-cloudflare" hreflang="es" data-h-52a6c69>
+<link rel="alternate" href="https://www.capsolver.com/es/blog/bypass-cloudflare" hreflang="es-ES" data-h-47b09bd>
+<link rel="alternate" href="https://www.capsolver.com/ru/blog/bypass-cloudflare" hreflang="ru" data-h-6520db3>
+<link rel="alternate" href="https://www.capsolver.com/ru/blog/bypass-cloudflare" hreflang="ru-RU" data-h-7516271>
+<link rel="alternate" href="https://www.capsolver.com/blog/bypass-cloudflare" hreflang="x-default" data-h-6527e7a>
+<link rel="canonical" href="https://www.capsolver.com/zh/blog/bypass-cloudflare" data-h-5cca6f5>
+<meta property="og:url" content="https://www.capsolver.com/zh/blog/bypass-cloudflare">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="description" content=" In the ensuing discussion, our goal is to provide a detailed insight into an innovative feature called Cloudflare Challenge. In addition, we will lead you through the method of easily bypassing this Challenge, Cloudflare's innovative CAPTCHA system, with the assistance of a tool known as CapSolver.  This write-up will act as a beacon, shedding light on the complexities of the Cloudflare Challenge - a cutting-edge security measure that stands as a sentinel to online content. We will explore its workings and delve into its significance in the sphere of cyber security. Progressing further, we will acquaint you with CapSolver, a powerful tool devised for evading the latest CAPTCHA system, the Challenge, put forth by Cloudflare. By the time you reach the conclusion of this captivating exploration, you will have gained a firm understanding of how to adeptly maneuver around this contemporary cyber barricade using CapSolver with confidence and finesse.">
+<meta name="keywords" content="bypass cloudflare, bypass cloudflare turnstile, bypass cloudflare challenge, solve turnstile, solving turnstile, solving clouflare"><style cssr-id="n-image">
+body > .n-image-container {
+position: fixed;
+}
+
+.n-image-preview-container {
+
+ position: fixed;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ display: flex;
+ 
+}
+
+.n-image-preview-overlay {
+
+ z-index: -1;
+ position: absolute;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ background: rgba(0, 0, 0, .3);
+ 
+}
+
+.n-image-preview-overlay.fade-in-transition-enter-active {
+  transition: all 0.2s cubic-bezier(.4, 0, .2, 1)!important;
+}
+
+.n-image-preview-overlay.fade-in-transition-leave-active {
+  transition: all 0.2s cubic-bezier(.4, 0, .2, 1)!important;
+}
+
+.n-image-preview-overlay.fade-in-transition-enter-from, .n-image-preview-overlay.fade-in-transition-leave-to {
+  opacity: 0;
+}
+
+.n-image-preview-overlay.fade-in-transition-leave-from, .n-image-preview-overlay.fade-in-transition-enter-to {
+  opacity: 1;
+}
+
+.n-image-preview-toolbar {
+
+ z-index: 1;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ border-radius: var(--n-toolbar-border-radius);
+ height: 48px;
+ bottom: 40px;
+ padding: 0 12px;
+ background: var(--n-toolbar-color);
+ box-shadow: var(--n-toolbar-box-shadow);
+ color: var(--n-toolbar-icon-color);
+ transition: color .3s var(--n-bezier);
+ display: flex;
+ align-items: center;
+ 
+}
+
+.n-image-preview-toolbar .n-base-icon {
+
+ padding: 0 8px;
+ font-size: 28px;
+ cursor: pointer;
+ 
+}
+
+.n-image-preview-toolbar.fade-in-transition-enter-active {
+  transition: all 0.2s cubic-bezier(.4, 0, .2, 1)!important;
+}
+
+.n-image-preview-toolbar.fade-in-transition-leave-active {
+  transition: all 0.2s cubic-bezier(.4, 0, .2, 1)!important;
+}
+
+.n-image-preview-toolbar.fade-in-transition-enter-from, .n-image-preview-toolbar.fade-in-transition-leave-to {
+  opacity: 0;
+}
+
+.n-image-preview-toolbar.fade-in-transition-leave-from, .n-image-preview-toolbar.fade-in-transition-enter-to {
+  opacity: 1;
+}
+
+.n-image-preview-wrapper {
+
+ position: absolute;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ display: flex;
+ pointer-events: none;
+ 
+}
+
+.n-image-preview-wrapper.fade-in-scale-up-transition-leave-active {
+  transform-origin: inherit;
+  transition: opacity .2s cubic-bezier(.4, 0, 1, 1), transform .2s cubic-bezier(.4, 0, 1, 1) ;
+}
+
+.n-image-preview-wrapper.fade-in-scale-up-transition-enter-active {
+  transform-origin: inherit;
+  transition: opacity .2s cubic-bezier(0, 0, .2, 1), transform .2s cubic-bezier(0, 0, .2, 1) ;
+}
+
+.n-image-preview-wrapper.fade-in-scale-up-transition-enter-from, .n-image-preview-wrapper.fade-in-scale-up-transition-leave-to {
+  opacity: 0;
+  transform:  scale(.9);
+}
+
+.n-image-preview-wrapper.fade-in-scale-up-transition-leave-from, .n-image-preview-wrapper.fade-in-scale-up-transition-enter-to {
+  opacity: 1;
+  transform:  scale(1);
+}
+
+.n-image-preview {
+
+ user-select: none;
+ -webkit-user-select: none;
+ pointer-events: all;
+ margin: auto;
+ max-height: calc(100vh - 32px);
+ max-width: calc(100vw - 32px);
+ transition: transform .3s var(--n-bezier);
+ 
+}
+
+.n-image {
+
+ display: inline-flex;
+ max-height: 100%;
+ max-width: 100%;
+ 
+}
+
+.n-image:not(.n-image--preview-disabled) {
+
+ cursor: pointer;
+ 
+}
+
+.n-image img {
+
+ border-radius: inherit;
+ 
+}
+</style>
+<style cssr-id="n-global">
+body {
+
+ margin: 0;
+ font-size: 14px;
+ font-family: v-sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ line-height: 1.6;
+ -webkit-text-size-adjust: 100%;
+ -webkit-tap-highlight-color: transparent;
+
+}
+
+body input {
+
+ font-family: inherit;
+ font-size: inherit;
+ 
+}
+</style><link rel="modulepreload" as="script" crossorigin href="/_nuxt/entry.d7d0bc4f.js"><link rel="preload" as="style" href="/_nuxt/entry.59ae3959.css"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/default.1fab2240.js"><link rel="preload" as="style" href="/_nuxt/default.79062eff.css"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/AButton.vue.e736a046.js"><link rel="preload" as="style" href="/_nuxt/AButton.b197c24c.css"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/_plugin-vue_export-helper.c27b6911.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/config.3f7bdb1d.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/nuxt-link.0f57d81f.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/blog.a4d5ea48.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/iconify.60f75d2d.js"><link rel="preload" as="style" href="/_nuxt/iconify.881e6a8f.css"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/time.ed021a53.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/state.f4435016.js"><link rel="prefetch" as="style" href="/_nuxt/_slug_.86899424.css"><link rel="prefetch" as="script" crossorigin href="/_nuxt/_slug_.cf6fad18.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/en.3ae2b7c2.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/zh.3a9a332b.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/es.6fb02497.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/ru.8f2efa61.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/i18n.options.2b6b121a.js"><link rel="prefetch" as="script" crossorigin href="/_nuxt/error-component.55d81b7c.js"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/icon-cancel.ee92f5ce.svg"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/arrow_down.06e5710b.svg"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/cn.c1f22841.svg"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/es.6fe80291.svg"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/ru.6c62f886.svg"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/us.553867d3.svg"><link rel="prefetch" as="image" type="image/png" href="/_nuxt/logo.eb4b912e.png"><link rel="prefetch" as="image" type="image/png" href="/_nuxt/logo-text.26fae815.png"><link rel="stylesheet" href="css/entry.59ae3959.css"><link rel="stylesheet" href="css/default.79062eff.css"><link rel="stylesheet" href="css/AButton.b197c24c.css"><link rel="stylesheet" href="css/iconify.881e6a8f.css"><style>.header[data-v-621ad279]{background-color:#e9f3ef;border-bottom:2px solid #00201b;height:64px}.nav[data-v-621ad279]{margin-left:132px}.nav .nav-item[data-v-621ad279]{cursor:pointer;font-size:16px;font-weight:500;line-height:24px;margin-right:40px;position:relative}.nav .nav-item.active[data-v-621ad279]:after{background:#191c1b;bottom:-8px;content:"";height:4px;left:50%;margin-left:-18px;position:absolute;width:36px}.nav-toggle-icon[data-v-621ad279]{cursor:pointer;margin-left:12px}</style><style>.icon:hover .dialaing[data-v-57b6b7e0]{display:block}.dialaing[data-v-57b6b7e0]{background-color:#fff;border-radius:4px;box-shadow:0 1px 5px #0003,0 2px 2px #00000024,0 3px 1px -2px #0000001f;display:none;font-size:16px;margin-left:-32px;margin-top:0;position:fixed}.dialaing ul[data-v-57b6b7e0]{padding:10px}.dialaing li[data-v-57b6b7e0]{color:#000;cursor:pointer;list-style-type:none;padding:5px 10px}.dialaing li[data-v-57b6b7e0]:hover{background:#eaf4f0;border-radius:4px}.dialaing[data-v-57b6b7e0]:after{border:8px solid transparent;border-bottom-color:#c5c5c5}.dialaing[data-v-57b6b7e0]:after,.dialaing[data-v-57b6b7e0]:before{content:"";left:60px;position:absolute;top:-16px}.dialaing[data-v-57b6b7e0]:before{border:8px solid transparent;border-bottom-color:#fff;height:0;width:0;z-index:2}.language-item .q-item__section--avatar[data-v-57b6b7e0]{min-width:unset;padding-right:8px}.language-item__active[data-v-57b6b7e0]{border-radius:4px;color:#fff}</style><style>.blog[data-v-a9110a9c]{line-height:1.25}</style><style>.md-editor .md-editor-preview-wrapper{padding:0}.md-editor-content .md-editor-html,.md-editor-content .md-editor-preview{word-break:normal}</style><style>.post-sider[data-v-5426d1c1]{border-color:#e0e3e1;border-style:solid;bottom:auto;max-height:100vh;overflow-y:auto;right:0;z-index:0}</style><style>.copyright[data-v-835d6ace],.footer[data-v-835d6ace]{border-top:1px solid #e0e3e1}.copyright[data-v-835d6ace]{color:#5c5f5e;font-size:14px;font-weight:400;line-height:20px}.link-title[data-v-835d6ace]{font-weight:600}.link[data-v-835d6ace],.link-title[data-v-835d6ace]{font-size:16px;line-height:24px}.link[data-v-835d6ace]{cursor:pointer;font-weight:400;margin-top:12px}</style></head>
+<body><div id="__nuxt"><div class="n-config-provider"><div role="none" class="n-element" style="--name:common;--font-family:Poppins, v-sans, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;--font-family-mono:v-mono, SFMono-Regular, Menlo, Consolas, Courier, monospace;--font-weight:400;--font-weight-strong:500;--cubic-bezier-ease-in-out:cubic-bezier(.4, 0, .2, 1);--cubic-bezier-ease-out:cubic-bezier(0, 0, .2, 1);--cubic-bezier-ease-in:cubic-bezier(.4, 0, 1, 1);--border-radius:6px;--border-radius-small:4px;--font-size:14px;--font-size-mini:12px;--font-size-tiny:12px;--font-size-small:14px;--font-size-medium:14px;--font-size-large:15px;--font-size-huge:16px;--line-height:1.5;--height-mini:16px;--height-tiny:22px;--height-small:28px;--height-medium:36px;--height-large:40px;--height-huge:52px;--base-color:#FFF;--primary-color:#191C1B;--primary-color-hover:#252928;--primary-color-pressed:#0d0f0e;--primary-color-suppl:#191C1B;--info-color:#2080f0;--info-color-hover:#4098fc;--info-color-pressed:#1060c9;--info-color-suppl:#4098fc;--success-color:#59AD71;--success-color-hover:#528a62;--success-color-pressed:#528a62;--success-color-suppl:#528a62;--warning-color:#f0a020;--warning-color-hover:#fcb040;--warning-color-pressed:#c97c10;--warning-color-suppl:#fcb040;--error-color:#D71010;--error-color-hover:#de576d;--error-color-pressed:#ab1f3f;--error-color-suppl:#de576d;--text-color-base:#000;--text-color-1:#000;--text-color-2:#212121;--text-color-3:#5C5F5E;--text-color-disabled:rgba(194, 194, 194, 1);--placeholder-color:#8F98A3;--placeholder-color-disabled:rgba(209, 209, 209, 1);--icon-color:rgba(194, 194, 194, 1);--icon-color-hover:rgba(146, 146, 146, 1);--icon-color-pressed:rgba(175, 175, 175, 1);--icon-color-disabled:rgba(209, 209, 209, 1);--opacity-1:0.82;--opacity-2:0.72;--opacity-3:0.38;--opacity-4:0.24;--opacity-5:0.18;--divider-color:rgb(239, 239, 245);--border-color:#E7E7E9;--close-icon-color:rgba(102, 102, 102, 1);--close-icon-color-hover:rgba(102, 102, 102, 1);--close-icon-color-pressed:rgba(102, 102, 102, 1);--close-color-hover:rgba(0, 0, 0, .09);--close-color-pressed:rgba(0, 0, 0, .13);--clear-color:rgba(194, 194, 194, 1);--clear-color-hover:rgba(146, 146, 146, 1);--clear-color-pressed:rgba(175, 175, 175, 1);--scrollbar-color:rgba(0, 0, 0, 0.25);--scrollbar-color-hover:rgba(0, 0, 0, 0.4);--scrollbar-width:5px;--scrollbar-height:5px;--scrollbar-border-radius:5px;--progress-rail-color:rgba(235, 235, 235, 1);--rail-color:rgb(219, 219, 223);--popover-color:#fff;--table-color:#fff;--card-color:#fff;--modal-color:#fff;--body-color:#fff;--tag-color:#eee;--avatar-color:rgba(204, 204, 204, 1);--inverted-color:rgb(0, 20, 40);--input-color:#EEF3F7;--code-color:rgb(244, 244, 248);--tab-color:rgb(247, 247, 250);--action-color:rgb(250, 250, 252);--table-header-color:rgb(250, 250, 252);--hover-color:rgb(243, 243, 245);--table-color-hover:rgba(0, 0, 100, 0.03);--table-color-striped:rgba(0, 0, 100, 0.02);--pressed-color:rgb(237, 237, 239);--opacity-disabled:0.5;--input-color-disabled:rgb(250, 250, 252);--button-color-2:rgba(46, 51, 56, .05);--button-color-2-hover:rgba(46, 51, 56, .09);--button-color-2-pressed:rgba(46, 51, 56, .13);--box-shadow-1:0 1px 2px -2px rgba(0, 0, 0, .08), 0 3px 6px 0 rgba(0, 0, 0, .06), 0 5px 12px 4px rgba(0, 0, 0, .04);--box-shadow-2:0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05);--box-shadow-3:0 6px 16px -9px rgba(0, 0, 0, .08), 0 9px 28px 0 rgba(0, 0, 0, .05), 0 12px 48px 16px rgba(0, 0, 0, .03);--secondary-color:#9CEEDD;--secondary-color-hover:#b2f2e4;--secondary-color-pressed:#86ead6;--secondary-color-suppl:#9CEEDD;--tertiary-color:#5358F6;--tertiary-color-hover:#484ee3;--tertiary-color-pressed:#484ee3;--tertiary-color-suppl:#484ee3;--text-color-4:#B3B3B3;--bg-0:#fff;--bg-1:#F9FAFB;--bg-2:#edf1f6;--bg-3:#282E3A;--text-color-inverse:#fff;--border-color-1:#F6F6F8;"><div><!--[--><!--[--><!--[--><!--[--><!--]--><!--[--><!--[--><!----><!--[--><div><!--[--><!--[--><header class="fixed inset-x-0 top-0 z-999" data-v-621ad279><div class="safe-pd bg-[#00A38F] flex items-center justify-center" data-v-621ad279><div class="container h-64px flex items-center justify-center"><span class="text-white text-16px">注册并更新个人信息以获得免费试用!🔥</span><div class="link btn md:ml-40px" data-v-328ffeba><!--[--><a class="row items-center" href="https://dashboard.capsolver.com/passport/register" target="_blank" data-v-328ffeba><!--[-->现在注册<!--]--></a><!--]--></div></div><img src="fonts/icon-cancel.ee92f5ce.svg" class="cursor-pointer" alt></div><div class="header flex safe-pd" data-v-621ad279><div class="container mx-auto flex items-center" data-v-621ad279><a href="zh.html" class data-v-621ad279><img src="images/logo.eb4b912e.png" alt="capsolver" class="w-60px mr-8px" data-v-621ad279></a><a href="zh.html" class data-v-621ad279><img src="images/logo-text.26fae815.png" alt="capsolver" class="w-154px hidden lg:block" data-v-621ad279></a><nav class="nav hidden xl:flex" data-v-621ad279><!--[--><!--[--><a href="zh.html#pricing" class="nav-item cursor-pointer" data-v-621ad279>价格</a><!--]--><!--[--><a href="zh.html#referral" class="nav-item cursor-pointer" data-v-621ad279>推荐好友</a><!--]--><!--[--><a href="blog_11.html" class="router-link-active nav-item cursor-pointer" data-v-621ad279>博客</a><!--]--><!--[--><div class="link nav-item cursor-pointer" data-v-621ad279 data-v-328ffeba><!--[--><a class="row items-center" href="https://docs.capsolver.com/" target="_blank" data-v-328ffeba><!--[-->文档<!--]--></a><!--]--></div><!--]--><!--]--></nav><div class="ml-auto flex" data-v-621ad279><div class="icon cursor-pointer" data-v-621ad279 data-v-57b6b7e0><div class="flex items-center justify-center h-40px" data-v-57b6b7e0><img src="fonts/cn.c1f22841.svg" class="q-ml-sm text-16px mr-8px h-16px" alt data-v-57b6b7e0><span class="text-16px font-500" data-v-57b6b7e0>简体中文</span><img class="h-16px w-16px" src="fonts/arrow_down.06e5710b.svg" alt data-v-57b6b7e0></div><div class="dialaing" data-v-57b6b7e0><ul data-v-57b6b7e0><!--[--><li class="language-item flex" data-v-57b6b7e0><a href="bypass-cloudflare.html" class="flex items-center" data-v-57b6b7e0><img src="fonts/us.553867d3.svg" class="q-ml-sm text-16px mr-8px h-16px" alt data-v-57b6b7e0><span data-v-57b6b7e0>English</span></a></li><li class="language-item flex" data-v-57b6b7e0><a aria-current="page" href="bypass-cloudflare_1.html" class="router-link-active router-link-exact-active flex items-center" data-v-57b6b7e0><img src="fonts/cn.c1f22841.svg" class="q-ml-sm text-16px mr-8px h-16px" alt data-v-57b6b7e0><span data-v-57b6b7e0>简体中文</span></a></li><li class="language-item flex" data-v-57b6b7e0><a href="bypass-cloudflare_2.html" class="flex items-center" data-v-57b6b7e0><img src="fonts/es.6fe80291.svg" class="q-ml-sm text-16px mr-8px h-16px" alt data-v-57b6b7e0><span data-v-57b6b7e0>Español</span></a></li><li class="language-item flex" data-v-57b6b7e0><a href="bypass-cloudflare_3.html" class="flex items-center" data-v-57b6b7e0><img src="fonts/ru.6c62f886.svg" class="q-ml-sm text-16px mr-8px h-16px" alt data-v-57b6b7e0><span data-v-57b6b7e0>Россия</span></a></li><!--]--></ul></div></div><button class="btn flex justify-center items-center cursor-pointer hidden md:flex ml-12px" data-v-621ad279><!----><span><!--[-->联系销售<!--]--></span><!----></button><div class="link ml-12px btn-light" data-v-621ad279 data-v-328ffeba><!--[--><a class="row items-center" href="https://dashboard.capsolver.com/passport/sign" target="_blank" data-v-328ffeba><!--[-->登录<!--]--></a><!--]--></div></div></div></div></header><main class="pt-128px"><!--[--><div class="blog safe-pd" data-v-a9110a9c><div class="container mx-auto" data-v-a9110a9c><div role="none" class="n-space w-full" style="display:flex;flex-direction:row;justify-content:space-between;flex-wrap:wrap;margin-top:;margin-bottom:;gap:32px 32px;" data-v-a9110a9c><div class="pt-[44px] pb-[54px] flex-1 w-full lg:w-[1px]" data-v-a9110a9c><!--[--><!--[--><div role="none" class="n-space" style="display:flex;flex-direction:column;justify-content:flex-start;flex-wrap:nowrap;margin-top:;margin-bottom:;gap:20px 20px;"><div role="none" style="max-width:100%;"><h2 class="text-[28px] font-bold leading-tight">Bypass Cloudflare</h2></div><div role="none" style="max-width:100%;"><div role="none" class="n-space" style="display:flex;flex-direction:row;justify-content:flex-start;flex-wrap:wrap;margin-top:;margin-bottom:;align-items:center;gap:8px 12px;"><div role="none" style="max-width:100%;"><div class="w-[48px] h-[48px]"><div class="rounded-[6px] n-image n-image--preview-disabled" role="none"><!--[--><!--[--><img src="images/logo.png" loading="eager" style="object-fit:fill;" data-error="false" data-preview-src="/logo.png"><!--]--><!----><!--]--><!----></div></div></div><div role="none" style="max-width:100%;"><div class="leading-normal"><p class="text-title">CapSolver Blogger</p><p class="text-color-3">How to use capsolver</p></div></div></div></div><div role="none" style="max-width:100%;"><p class="text-color-4">21-May-2023</p></div></div><div id="md-editor-v3" class="md-editor mt-[24px] md-editor-previewOnly" style><!----><div class="md-editor-content"><!----><div id="md-editor-v3-preview-wrapper" class="md-editor-preview-wrapper"><article id="md-editor-v3-preview" class="md-editor-preview github-theme"><h1 data-line="0" id="Bypassing Cloudflare Challenge with Capsolver API">Bypassing Cloudflare Challenge with Capsolver API</h1>
+<p data-line="2">In this blog post, we'll focus on how to programmatically bypass the Cloudflare Challenge using Capsolver API. This can be particularly useful for developers who are working on projects that require automating tasks that involve interacting with Cloudflare Challenge protected websites.</p>
+<h2 data-line="4" id="Understanding Cloudflare Challenge">Understanding Cloudflare Challenge</h2>
+<p data-line="6">Cloudflare Challenge is a service that protects websites from bots and spam by presenting users with a challenge that needs to be solved to prove that they're human. Capsolver provides support for various types of Cloudflare Challenge tasks. In this blog post, we'll be focusing on <code>AntiCloudflareTask</code> type.</p>
+<p data-line="8">This task type requires your own proxies. We support most Cloudflare protected sites, including 5s challenge, captcha and other sites with verification mode. But since the site mode can be customized, if your site does not support please contact us.</p>
+<p data-line="10">There is no need to specify subtypes during your call. It is not necessary to provide your own custom <code>User-Agent</code> yet, we will ignore this parameter.</p>
+<h2 data-line="12" id="Creating a Task for Cloudflare Challenge">Creating a Task for Cloudflare Challenge</h2>
+<p data-line="14">To bypass Cloudflare Challenge, the first step involves creating a task with the <code>createTask</code> method. Here's an example of the task object structure:</p>
+<pre data-line="16"><code class="language-json" language="json"><span class="code-block">{
+  &quot;type&quot;: &quot;AntiCloudflareTask&quot;,
+  &quot;websiteURL&quot;: &quot;URL of the website using Cloudflare Challenge&quot;,
+  &quot;metadata&quot;: {
+    &quot;type&quot;: &quot;challenge&quot;
+  },
+  &quot;html&quot;: &quot;&lt;your challenge html source code&gt;&quot;,
+  &quot;proxy&quot;: &quot;Your_own_proxy</span></code></pre>
+<p data-line="26">You can send a POST request to create a task using the Capsolver API like this:</p>
+<pre data-line="27"><code class="language-json" language="json"><span class="code-block">{
+  &quot;clientKey&quot;:&quot;YOUR_API_KEY&quot;,
+  &quot;task&quot;:{
+    &quot;type&quot;: &quot;AntiCloudflareTask&quot;,
+    &quot;websiteURL&quot;:&quot;https://website-url.com/&quot;,
+    &quot;metadata&quot;: {
+      &quot;type&quot;: &quot;challenge&quot;
+    },
+    &quot;html&quot;: &quot;&lt;your challenge html source code&gt;&quot;,
+    &quot;proxy&quot;:&quot;Your_own_proxy&quot;
+  }
+}</span></code></pre>
+<p data-line="41">Once you've submitted the task, you should receive a 'Task ID' in the response if it's successful.</p>
+<h1 data-line="42" id="Retrieving the Result of the Task">Retrieving the Result of the Task</h1>
+<p data-line="43">After you've created the task, you can retrieve the result using the <code>getTaskResult</code> method. Here's an example of a POST request to get the task result:</p>
+<pre data-line="44"><code class="language-json" language="json"><span class="code-block">{
+  &quot;clientKey&quot;: &quot;YOUR_API_KEY&quot;,
+  &quot;taskId&quot;: &quot;Task ID received from the createTask method&quot;
+}</span></code></pre>
+<p data-line="50">Once the task status is ready, you should receive the result of the Cloudflare Challenge in the response.</p>
+<h1 data-line="51" id="Solving Cloudflare Challenge with Python using Capsolver SDK">Solving Cloudflare Challenge with Python using Capsolver SDK</h1>
+<p data-line="52">Capsolver provides SDKs for Python. Here's an example of how to use the Capsolver SDK in Python to solve the Cloudflare Challenge:</p>
+<pre data-line="53"><code class="language-python" language="python"><span class="code-block"># pip install --upgrade capsolver
+# export CAPSOLVER_API_KEY='...'
+
+import capsolver
+
+# capsolver.api_key = &quot;...&quot;
+solution = capsolver.solve({
+    &quot;type&quot;: &quot;AntiCloudflareTask&quot;,
+    &quot;websiteURL&quot;: &quot;URL of the website using Cloudflare Challenge&quot;,
+    &quot;metadata&quot;: {
+        &quot;type&quot;: &quot;challenge&quot;
+    },
+    &quot;html&quot;: &quot;&lt;your challenge html source code&gt;&quot;,
+    &quot;proxy&quot;: &quot;Your_own_proxy&quot;
+})</span></code></pre>
+<p data-line="70">Please note that you would need to replace &quot;YOUR_API_KEY&quot; with your CapSolver API key, replace the &quot;URL of the website using Cloudflare Turnstile&quot; with the actual URL of the website, replace &quot;Turnstile website key&quot; with the actual website key, and replace &quot;Your_own_proxy&quot; with the details of your proxy.</p>
+<p data-line="72">Also, note that its supported most Cloudflare protected sites, since the site mode can be customized, there might be some sites that are not supported. In such cases, you should us for assistance.</p>
+<p data-line="74">I hope this helps! If you have any other questions, feel free to ask.</p>
+<h1 data-line="75" id="Pricing">Pricing</h1>
+<p data-line="76">For information on pricing, please visit our <a href="#pricing">pricing page</a>.</p>
+<h1 data-line="78" id="More Information of how to solve FunCaptcha">More Information of how to solve FunCaptcha</h1>
+<p data-line="79">Visit this <a href="https://docs.capsolver.com/guide/antibots/cloudflare_challenge.html">page</a></p>
+<p data-line="81">Capsolver Team 💜</p>
+</article></div><!----></div><!----><!----></div><!--]--><!--]--></div><aside class="post-sider lg:border-l-1 static lg:sticky lg:px-[32px] basis-[364px] pt-[44px] pb-[54px]" style="top:128px;" data-v-a9110a9c data-v-5426d1c1><h4 class="h4" data-v-5426d1c1>相关主题</h4><div role="none" class="n-space mt-[32px]" style="display:flex;flex-direction:row;justify-content:flex-start;flex-wrap:wrap;margin-top:;margin-bottom:;gap:8px 12px;" data-v-5426d1c1><div role="none" style="max-width:100%;"><a href="blog_28.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->reCAPTCHA<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_66.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->reCAPTCHA v3<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_97.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->hCaptcha<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_110.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->GeeTest<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_85.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->DataDome<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_82.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->Cloudflare<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_77.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->SneakerBot<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_115.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[--> 中文投稿(Submission)<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_43.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->FunCaptcha<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_14" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->Español<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_52.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->Capsolver<!--]--></div></a></div><div role="none" style="max-width:100%;"><a href="blog_112.html" class="router-link-active" data-v-5426d1c1><div class="tag tag-button !font-medium" data-v-5426d1c1 data-v-93ae9a92><!--[-->WebScraping<!--]--></div></a></div></div></aside></div></div></div><!--]--></main><footer class="footer safe-pd" data-v-835d6ace><div class="container my-60px mx-auto xl:flex justify-between" data-v-835d6ace><div data-v-835d6ace><div class="link-item flex items-center" data-v-835d6ace><div class="link" data-v-835d6ace data-v-328ffeba><!--[--><a href class data-v-328ffeba><!--[--><img src="images/logo.eb4b912e.png" alt="capsolver" class="w-40px block -ml-4px" data-v-835d6ace><!--]--></a><!--]--></div><div class="link" data-v-835d6ace data-v-328ffeba><!--[--><a href class data-v-328ffeba><!--[--><img src="images/logo-text.26fae815.png" alt="capsolver" class="w-104px block" data-v-835d6ace><!--]--></a><!--]--></div></div><div class="text-12px mt-6px text-[#5C5F5E]" data-v-835d6ace>Copyright © 2022-2023 Capsolver LLC. All Rights Reserved</div><div class="card grid grid-cols-4 gap-8px -ml-16px mt-46px" data-v-835d6ace><!--[--><div class="card-item flex justify-center items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px" style="width:70px;height:28px;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-payment_paypal" data-v-e9aaac93=""/></svg></div><div class="card-item flex justify-center items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px" style="width:70px;height:28px;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-payment_americanexpress" data-v-e9aaac93=""/></svg></div><div class="card-item flex justify-center items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px" style="width:70px;height:28px;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-payment_visa" data-v-e9aaac93=""/></svg></div><div class="card-item flex justify-center items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px" style="width:70px;height:28px;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-payment_master" data-v-e9aaac93=""/></svg></div><div class="card-item flex justify-center items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px" style="width:70px;height:28px;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-payment_alipay" data-v-e9aaac93=""/></svg></div><div class="card-item flex justify-center items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px" style="width:70px;height:28px;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-payment_btc" data-v-e9aaac93=""/></svg></div><div class="card-item flex justify-center items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px" style="width:70px;height:28px;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-payment_usdt" data-v-e9aaac93=""/></svg></div><div class="card-item flex justify-center items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px" style="width:70px;height:28px;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-payment_eth" data-v-e9aaac93=""/></svg></div><!--]--></div></div><div class="link-item mt-30px xl:mt-0" data-v-835d6ace><div class="link-title" data-v-835d6ace>资源</div><div data-v-835d6ace><div class="link link block" data-v-835d6ace data-v-328ffeba><!--[--><a class="row items-center" href="https://dashboard.capsolver.com/referral-system" target="_blank" data-v-328ffeba><!--[-->推荐好友<!--]--></a><!--]--></div></div><div data-v-835d6ace><a href="zh.html#use_case" class="link block" data-v-835d6ace>使用案例</a></div><div data-v-835d6ace><div class="link link block" data-v-835d6ace data-v-328ffeba><!--[--><a class="row items-center" href="https://docs.capsolver.com/" target="_blank" data-v-328ffeba><!--[-->文档<!--]--></a><!--]--></div></div><div data-v-835d6ace><a href="blog_11.html" class="router-link-active link block" data-v-835d6ace>博客</a></div></div><div class="link-item mt-30px xl:mt-0" data-v-835d6ace><div class="link-title" data-v-835d6ace>合规</div><div data-v-835d6ace><a href="policy_1.html" class="link block" data-v-835d6ace>条款和条件</a></div><div data-v-835d6ace><a href="policy_1.html" class="link block" data-v-835d6ace>隐私政策</a></div><div data-v-835d6ace><a href="policy_1.html" class="link block" data-v-835d6ace>退款政策</a></div></div><div class="link-item mt-30px xl:mt-0" data-v-835d6ace><div class="link-title" data-v-835d6ace>联系方式</div><div data-v-835d6ace><div class="link block flex items-center" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px mr-8px" style="width:14px;height:14px;color:#6F7976;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-chat1" data-v-e9aaac93=""/></svg><span data-v-835d6ace>在线聊天支持</span></div></div><div data-v-835d6ace><div class="link link block flex items-center" data-v-835d6ace data-v-328ffeba><!--[--><a class="row items-center" href="https://t.me/+2S60dFyiS4VmNzc1" target="_blank" data-v-328ffeba><!--[--><svg class="svg-icon inline-block w-18px h-18px mr-8px" style="width:14px;height:14px;color:#6F7976;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-a-shemeiTelegram" data-v-e9aaac93=""/></svg><span data-v-835d6ace>Telegram</span><!--]--></a><!--]--></div></div><div data-v-835d6ace><div class="link link block flex items-center" data-v-835d6ace data-v-328ffeba><!--[--><a class="row items-center" href="https://twitter.com/capsolver" target="_blank" data-v-328ffeba><!--[--><svg class="svg-icon inline-block w-18px h-18px mr-8px" style="width:14px;height:14px;color:#6F7976;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-a-shemeiTw" data-v-e9aaac93=""/></svg><span data-v-835d6ace>Twitter</span><!--]--></a><!--]--></div></div><div data-v-835d6ace><a class="link block flex items-center" href="email-protection.html#82f1f7f2f2edf0f6c2e1e3f2f1edeef4e7f0ace1edef" target="_blank" data-v-835d6ace><svg class="svg-icon inline-block w-18px h-18px mr-8px" style="width:14px;height:14px;color:#6F7976;" aria-hidden="true" data-v-835d6ace="" data-v-e9aaac93=""><use xlink:href="#icon-email1" data-v-e9aaac93=""/></svg><span data-v-835d6ace><span class="__cf_email__" data-cfemail="35464045455a474175565445465a594350471b565a58">[email&#160;protected]</span></span></a></div></div></div></footer><!--]--><!--]--></div><!--]--><!--]--><!--]--><!--]--><!--]--><!----><!--]--></div></div></div></div><script data-cfasync="false" src="js/email-decode.min.js"></script><script>window.__NUXT__=(function(a,b,c,d,e){return {data:{eKTGb8RRW2:{message:a,data:{_id:"646a5b1f4ad25ed7cad6cc16",title:b,content:"# Bypassing Cloudflare Challenge with Capsolver API\n\nIn this blog post, we'll focus on how to programmatically bypass the Cloudflare Challenge using Capsolver API. This can be particularly useful for developers who are working on projects that require automating tasks that involve interacting with Cloudflare Challenge protected websites.\n\n## Understanding Cloudflare Challenge\n\nCloudflare Challenge is a service that protects websites from bots and spam by presenting users with a challenge that needs to be solved to prove that they're human. Capsolver provides support for various types of Cloudflare Challenge tasks. In this blog post, we'll be focusing on `AntiCloudflareTask` type.\n\nThis task type requires your own proxies. We support most Cloudflare protected sites, including 5s challenge, captcha and other sites with verification mode. But since the site mode can be customized, if your site does not support please contact us.\n\nThere is no need to specify subtypes during your call. It is not necessary to provide your own custom `User-Agent` yet, we will ignore this parameter.\n\n## Creating a Task for Cloudflare Challenge\n\nTo bypass Cloudflare Challenge, the first step involves creating a task with the `createTask` method. Here's an example of the task object structure:\n\n```json\n{\n  \"type\": \"AntiCloudflareTask\",\n  \"websiteURL\": \"URL of the website using Cloudflare Challenge\",\n  \"metadata\": {\n    \"type\": \"challenge\"\n  },\n  \"html\": \"\u003Cyour challenge html source code\u003E\",\n  \"proxy\": \"Your_own_proxy\n```\nYou can send a POST request to create a task using the Capsolver API like this:\n```json\n{\n  \"clientKey\":\"YOUR_API_KEY\",\n  \"task\":{\n    \"type\": \"AntiCloudflareTask\",\n    \"websiteURL\":\"https:\u002F\u002Fwebsite-url.com\u002F\",\n    \"metadata\": {\n      \"type\": \"challenge\"\n    },\n    \"html\": \"\u003Cyour challenge html source code\u003E\",\n    \"proxy\":\"Your_own_proxy\"\n  }\n}\n```\nOnce you've submitted the task, you should receive a 'Task ID' in the response if it's successful.\n# Retrieving the Result of the Task\nAfter you've created the task, you can retrieve the result using the `getTaskResult` method. Here's an example of a POST request to get the task result:\n```json\n{\n  \"clientKey\": \"YOUR_API_KEY\",\n  \"taskId\": \"Task ID received from the createTask method\"\n}\n```\nOnce the task status is ready, you should receive the result of the Cloudflare Challenge in the response.\n# Solving Cloudflare Challenge with Python using Capsolver SDK\nCapsolver provides SDKs for Python. Here's an example of how to use the Capsolver SDK in Python to solve the Cloudflare Challenge:\n```python\n# pip install --upgrade capsolver\n# export CAPSOLVER_API_KEY='...'\n\nimport capsolver\n\n# capsolver.api_key = \"...\"\nsolution = capsolver.solve({\n    \"type\": \"AntiCloudflareTask\",\n    \"websiteURL\": \"URL of the website using Cloudflare Challenge\",\n    \"metadata\": {\n        \"type\": \"challenge\"\n    },\n    \"html\": \"\u003Cyour challenge html source code\u003E\",\n    \"proxy\": \"Your_own_proxy\"\n})\n```\nPlease note that you would need to replace \"YOUR_API_KEY\" with your CapSolver API key, replace the \"URL of the website using Cloudflare Turnstile\" with the actual URL of the website, replace \"Turnstile website key\" with the actual website key, and replace \"Your_own_proxy\" with the details of your proxy.\n\nAlso, note that its supported most Cloudflare protected sites, since the site mode can be customized, there might be some sites that are not supported. In such cases, you should us for assistance.\n\nI hope this helps! If you have any other questions, feel free to ask.\n# Pricing\nFor information on pricing, please visit our [pricing page](https:\u002F\u002Fwww.capsolver.com\u002F#pricing).\n\n# More Information of how to solve FunCaptcha\nVisit this [page](https:\u002F\u002Fdocs.capsolver.com\u002Fguide\u002Fantibots\u002Fcloudflare_challenge.html)\n\nCapsolver Team 💜\n",preview:"\nIn the ensuing discussion, our goal is to provide a detailed insight into an innovative feature called Cloudflare Challenge. In addition, we will lead you through the method of easily bypassing this Challenge, Cloudflare's innovative CAPTCHA system, with the assistance of a tool known as CapSolver.\n\nThis write-up will act as a beacon, shedding light on the complexities of the Cloudflare Challenge - a cutting-edge security measure that stands as a sentinel to online content. We will explore its workings and delve into its significance in the sphere of cyber security. Progressing further, we will acquaint you with CapSolver, a powerful tool devised for evading the latest CAPTCHA system, the Challenge, put forth by Cloudflare. By the time you reach the conclusion of this captivating exploration, you will have gained a firm understanding of how to adeptly maneuver around this contemporary cyber barricade using CapSolver with confidence and finesse.",slug:"bypass-cloudflare",view:8,previewImg:"https:\u002F\u002Fassets.capsolver.com\u002Fprod\u002Fimages\u002Fpost\u002F2023-05-21\u002Fff6eba55-2a6b-464d-8d30-7c15a5843cd0.jpeg",date:1684691743685,edited:c,status:1,tags:[d],metadata:{title:b,keywords:"bypass cloudflare, bypass cloudflare turnstile, bypass cloudflare challenge, solve turnstile, solving turnstile, solving clouflare",description:" In the ensuing discussion, our goal is to provide a detailed insight into an innovative feature called Cloudflare Challenge. In addition, we will lead you through the method of easily bypassing this Challenge, Cloudflare's innovative CAPTCHA system, with the assistance of a tool known as CapSolver.  This write-up will act as a beacon, shedding light on the complexities of the Cloudflare Challenge - a cutting-edge security measure that stands as a sentinel to online content. We will explore its workings and delve into its significance in the sphere of cyber security. Progressing further, we will acquaint you with CapSolver, a powerful tool devised for evading the latest CAPTCHA system, the Challenge, put forth by Cloudflare. By the time you reach the conclusion of this captivating exploration, you will have gained a firm understanding of how to adeptly maneuver around this contemporary cyber barricade using CapSolver with confidence and finesse."},createdAt:"2023-05-21T17:55:43.855Z",updatedAt:"2023-05-21T22:12:11.233Z",__v:0}},n4G8CAhSAH:{message:a,data:["reCAPTCHA","reCAPTCHA v3","hCaptcha","GeeTest","DataDome",d,"SneakerBot"," 中文投稿(Submission)","FunCaptcha","Español","Capsolver","WebScraping"]}},state:{},_errors:{eKTGb8RRW2:e,n4G8CAhSAH:e},serverRendered:c,config:{public:{i18n:{experimental:{jsTsFormatResource:false},baseUrl:"https:\u002F\u002Fwww.capsolver.com"}},app:{baseURL:"\u002F",buildAssetsDir:"\u002F_nuxt\u002F",cdnURL:""}}}}("success","Bypass Cloudflare",true,"Cloudflare",null))</script><script type="module" src="js/entry.d7d0bc4f.js" crossorigin></script></body>
+</html>
